@@ -22,10 +22,13 @@ function App() {
     [clinicData]
   );
 
-  const handleTimeSlots = useCallback((uniqueDate) => {
-    setTimeSlot(uniqueDate?.props?.children);
-    setSelectedTimeSlot(null);
-  }, []);
+  const handleTimeSlots = useCallback(
+    (uniqueDate) => {
+      setTimeSlot(uniqueDate?.props?.children);
+      setSelectedTimeSlot(null);
+    },
+    [setTimeSlot]
+  );
 
   const handleTimeClick = useCallback((time) => {
     setSelectedTimeSlot(time);
