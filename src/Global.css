@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "poppins", sans-serif;
+}
+
+.box-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 65px;
+  width: 125px;
+  background-color: #e5e7ea;
+  border: 1px solid #d2d4d6;
+  margin: 0px 10px 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.box:hover {
+  background-color: #234264;
+  color: white;
+  transition: 0.2s ease;
+}
+.time-box {
+  height: 60px;
+  width: 102px;
+  background-color: #e5e7ea;
+  border: 1px solid #d2d4d6;
+  margin: 0px 10px 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.colorBox {
+  height: 65px;
+  width: 125px;
+  background-color: #234264;
+  border: 1px solid #7f848c;
+  color: white;
+  margin: 0px 10px 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.colorTimeBox {
+  height: 60px;
+  width: 102px;
+  background-color: #234264;
+  border: 1px solid #7f848c;
+  color: white;
+  margin: 0px 10px 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.title-font {
+  font-weight: 600;
+  font-size: 22px;
+}
+.sub-text {
+  font-size: 12px;
+  font-weight: 600;
+}
+.available-slots {
+  border: 3px solid #c0c6cf;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 5px 15px;
+  margin-left: 10px;
+  color: #66819f;
+  background-color: #ececec;
+}
+.add-box {
+  height: 65px;
+  width: 125px;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 900;
+  margin-top: -13px;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  height: 100vh;
+  width: 685px;
+  display: flex;
+  align-items: center;
+}
+.shimmer-box {
+  height: 65px;
+  width: 120px;
+  background-color: #e0e2e7;
+  /* border: 1px solid #d2d4d6; */
+  margin: 0px 10px 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.below-shimmer {
+  margin-top: 100px;
+}
+
+.shimmer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(240, 240, 240, 0) 0%,
+    #f0f0f0 50%,
+    rgba(240, 240, 240, 0) 100%
+  );
+  animation: shimmerAnimation 1.5s infinite linear;
+}
+
+@keyframes shimmerAnimation {
+  0% {
+    transform: translate(-200%);
+  }
+  100% {
+    transform: translate(200%);
+  }
+}
+
+.selectTime-margin {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
