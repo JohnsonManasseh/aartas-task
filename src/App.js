@@ -32,7 +32,7 @@ function App() {
 
   const handleTimeClick = useCallback((time, id) => {
     setSelectedTimeSlot(time);
-    console.log("Selected Date & Time Id", id);
+    console.log("Selected Date & Time Id is", id);
   }, []);
 
   const filteredData = useMemo(
