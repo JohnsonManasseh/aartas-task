@@ -23,7 +23,7 @@ const SelectTime = ({
             key={item.id}
             id={item.id}
             handleTimeClick={handleTimeClick}
-            isTimeSelected={selectedTimeSlot === item}
+            isTimeSelected={selectedTimeSlot === item.time_from}
           />
         ))}
       </div>
