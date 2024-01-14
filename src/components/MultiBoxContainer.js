@@ -8,6 +8,8 @@ const MultiBoxContainer = ({
   handleTimeClick,
   formatTimeTo12Hour,
   formatDateToCustomFormat,
+  clinicData,
+  id,
 }) => {
   return (
     <div>
@@ -21,7 +23,7 @@ const MultiBoxContainer = ({
           }
 
           if (handleTimeClick) {
-            handleTimeClick(time);
+            handleTimeClick(time, id);
           }
         }}
       >

@@ -5,24 +5,27 @@ const SelectTime = ({
   handleTimeClick,
   formatTimeTo12Hour,
   selectedTimeSlot,
+  clinicData,
 }) => {
   return (
     <>
       <h1 className="title-font selectTime-margin">
         Select Time Slot{" "}
         <span className="available-slots">
-          {filteredData?.length} slots available{" "}
+          {filteredData.length} slots available{" "}
         </span>
       </h1>
       <div className="box-container">
         {filteredData?.map((item) => (
           <MultiBoxContainer
             formatTimeTo12Hour={formatTimeTo12Hour}
-            time={item}
+            time={item.time_from}
             timeBox={true}
-            key={item}
+            key={item.id}
+            id={item.id}
             handleTimeClick={handleTimeClick}
             isTimeSelected={selectedTimeSlot === item}
+            clinicData={clinicData}
           />
         ))}
       </div>

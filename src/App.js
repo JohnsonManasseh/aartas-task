@@ -30,15 +30,16 @@ function App() {
     [setTimeSlot]
   );
 
-  const handleTimeClick = useCallback((time) => {
+  const handleTimeClick = useCallback((time, id) => {
     setSelectedTimeSlot(time);
+    console.log("Selected Date & Time Id", id);
   }, []);
 
   const filteredData = useMemo(
     () =>
       clinicData
         ?.filter((item) => item.date === timeSlot)
-        .map((item) => item.time_from),
+        .map((item) => ({ id: item.id, time_from: item.time_from })),
     [clinicData, timeSlot]
   );
 
@@ -60,6 +61,7 @@ function App() {
               handleTimeClick={handleTimeClick}
               formatTimeTo12Hour={formatTimeTo12Hour}
               selectedTimeSlot={selectedTimeSlot}
+              clinicData={clinicData}
             />
           </div>
         </div>
