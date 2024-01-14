@@ -1,3 +1,5 @@
+// dynamic boxes
+
 const MultiBoxContainer = ({
   date,
   handleTimeSlots,
@@ -11,7 +13,7 @@ const MultiBoxContainer = ({
   id,
 }) => {
   return (
-    <div>
+    <>
       <div
         className={`${isSelected ? "colorBox" : "box"} ${
           isTimeSelected ? "colorTimeBox" : "box"
@@ -35,7 +37,7 @@ const MultiBoxContainer = ({
           <p className="sub-text">{formatTimeTo12Hour(time)}</p>
         )}
       </div>
-    </div>
+    </>
   );
 };
 export default MultiBoxContainer;
