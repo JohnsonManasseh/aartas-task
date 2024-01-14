@@ -61,7 +61,6 @@ function App() {
               handleTimeClick={handleTimeClick}
               formatTimeTo12Hour={formatTimeTo12Hour}
               selectedTimeSlot={selectedTimeSlot}
-              clinicData={clinicData}
             />
           </div>
         </div>

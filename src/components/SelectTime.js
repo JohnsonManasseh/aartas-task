@@ -5,7 +5,6 @@ const SelectTime = ({
   handleTimeClick,
   formatTimeTo12Hour,
   selectedTimeSlot,
-  clinicData,
 }) => {
   return (
     <>
@@ -25,7 +24,6 @@ const SelectTime = ({
             id={item.id}
             handleTimeClick={handleTimeClick}
             isTimeSelected={selectedTimeSlot === item}
-            clinicData={clinicData}
           />
         ))}
       </div>
