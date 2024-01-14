@@ -21,8 +21,8 @@ code {
 }
 
 .box {
-  height: 65px;
-  width: 125px;
+  height: 76px;
+  width: 147px;
   background-color: #e5e7ea;
   border: 1px solid #d2d4d6;
   margin: 0px 10px 15px 0px;
@@ -38,7 +38,7 @@ code {
 }
 .time-box {
   height: 60px;
-  width: 102px;
+  width: 120px;
   background-color: #e5e7ea;
   border: 1px solid #d2d4d6;
   margin: 0px 10px 15px 0px;
@@ -48,8 +48,8 @@ code {
   cursor: pointer;
 }
 .colorBox {
-  height: 65px;
-  width: 125px;
+  height: 76px;
+  width: 147px;
   background-color: #234264;
   border: 1px solid #7f848c;
   color: white;
@@ -61,7 +61,7 @@ code {
 }
 .colorTimeBox {
   height: 60px;
-  width: 102px;
+  width: 120px;
   background-color: #234264;
   border: 1px solid #7f848c;
   color: white;
@@ -90,8 +90,8 @@ code {
   background-color: #ececec;
 }
 .add-box {
-  height: 65px;
-  width: 125px;
+  height: 76px;
+  width: 147px;
   border: 3px solid black;
   display: flex;
   align-items: center;
@@ -106,7 +106,7 @@ code {
 }
 .container {
   height: 100vh;
-  width: 685px;
+  width: 803px;
   display: flex;
   align-items: center;
 }
